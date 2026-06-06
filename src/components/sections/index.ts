@@ -16,3 +16,6 @@ export { RelatedIndustries } from "./related-industries";
 export { NearbyLocations } from "./nearby-locations";
 export { ServiceCTA } from "./service-cta";
 export { FaqAccordion } from "./faq-accordion";
+export { WebDevPricingPreview } from "./WebDevPricingPreview";
+export { MobileAppPricingPreview } from "./MobileAppPricingPreview";
+export { PricingSectionWrapper } from "./PricingSectionWrapper";

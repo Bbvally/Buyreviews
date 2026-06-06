@@ -9,7 +9,7 @@ import {
   LocationsSection,
   TestimonialsSection,
   WhyReviewsMatter,
-  PricingPreview,
+  PricingSectionWrapper,  // CHANGED: import wrapper instead of PricingPreview
   FAQSection,
   CTAFinal,
 } from "@/components/sections";
@@ -120,7 +120,9 @@ export default function HomePage() {
       />
       <main>
         <Hero />
-        <PricingPreview />
+        
+        {/* CHANGED: Replaced PricingPreview with PricingSectionWrapper */}
+        <PricingSectionWrapper />
 
         {/* Loom Presentation Video */}
         <section className="bg-bg py-12 sm:py-16">

@@ -232,6 +232,22 @@ export const servicesData = {
       icon: "TrendingUp" as IconName,
       features: ["Citation building", "Local backlinks", "Maps ranking"],
     },
+    {
+      title: "Web Development",
+      description:
+        "Professional websites and web applications built with modern technology. Fast, secure, and optimized for conversions.",
+      href: "/web-pricing/",
+      icon: "Globe" as IconName,
+      features: ["Responsive design", "SEO-optimized", "Fast & secure"],
+    },
+    {
+      title: "Mobile App Development",
+      description:
+        "Custom iOS and Android apps to reach your customers on mobile. Built for performance, scalability, and user engagement.",
+      href: "/app-pricing/",
+      icon: "Monitor" as IconName,
+      features: ["iOS & Android", "Custom features", "App store ready"],
+    },
   ] satisfies ServiceCardData[],
 };
 
@@ -615,4 +631,108 @@ export const whyReviewsMatterData = {
     primary: { label: "Start Building Your Reviews", href: "/get-started/" },
     secondary: { label: "View Pricing Plans", href: "/pricing/" },
   },
+};
+
+// NEW: Web Development Preview Data
+export const webdevPreviewData = {
+  title: "Web Development Packages",
+  subtitle:
+    "Get a professional website or web application. All packages include 1 year of hosting and support.",
+  plans: [
+    {
+      name: "Landing Page",
+      price: "150,000",
+      unit: "one-time",
+      features: [
+        "1-page scrolling website",
+        "Lead capture form",
+        "WhatsApp / call buttons",
+        "Mobile responsive",
+        "1 year hosting included",
+      ],
+      isPopular: false,
+      href: "/get-started/",
+    },
+    {
+      name: "Starter Website",
+      price: "320,000",
+      unit: "one-time",
+      features: [
+        "5 pages (Home, About, Services, Contact, Blog)",
+        "Image gallery",
+        "Contact form",
+        "Blog ready",
+        "1 year hosting included",
+      ],
+      isPopular: false,
+      href: "/get-started/",
+    },
+    {
+      name: "Business Website",
+      price: "620,000",
+      unit: "one-time",
+      features: [
+        "10+ pages",
+        "SEO-optimised structure",
+        "Advanced contact form",
+        "WhatsApp chat button",
+        "1 year hosting included",
+      ],
+      isPopular: true,
+      href: "/get-started/",
+    },
+  ],
+  viewAllHref: "/web-pricing/",
+};
+
+// NEW: Mobile App Preview Data
+export const mobileappPreviewData = {
+  title: "Mobile App Development Packages",
+  subtitle:
+    "Launch your app on iOS and Android. All packages include 1 year of hosting and support.",
+  plans: [
+    {
+      name: "Basic App",
+      price: "1,200,000",
+      unit: "one-time",
+      features: [
+        "iOS + Android",
+        "3–5 screens",
+        "Push notifications",
+        "Contact & map integration",
+        "1 year hosting included",
+      ],
+      isPopular: false,
+      href: "/get-started/",
+    },
+    {
+      name: "Business App",
+      price: "2,200,000",
+      unit: "one-time",
+      features: [
+        "iOS + Android",
+        "6–10 screens",
+        "User accounts & login",
+        "Admin dashboard",
+        "1 year hosting included",
+      ],
+      isPopular: true,
+      href: "/get-started/",
+    },
+    {
+      name: "E-Commerce App",
+      price: "3,500,000",
+      unit: "one-time",
+      features: [
+        "iOS + Android",
+        "Up to 1,000 products",
+        "Payment gateways",
+        "Order tracking",
+        "1 year hosting included",
+      ],
+      isPopular: false,
+      href: "/get-started/",
+    },
+  ],
+  viewAllHref: "/app-pricing/",
 };
