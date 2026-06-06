@@ -1,70 +1,111 @@
-import type { Metadata } from "next";
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
 import { Breadcrumb } from "@/components/layout/breadcrumb";
 import { buildBreadcrumbs } from "@/lib/internal-links";
 import { getColorForIndex } from "@/lib/colors";
 import { pricingPlans, additionalServices } from "@/data/pricing";
+import { webdevPlans, webdevAddOns } from "@/data/webdev-pricing";
+import { mobileappPlans, mobileappAddOns } from "@/data/mobileapp-pricing";
 import { CheckCircle } from "@/components/icons";
 
-export const metadata: Metadata = {
-  title: "💰 Pricing — Google Reviews Packages from ₦150,000/mo",
-  description:
-    "🎁 5 FREE reviews with first order! Transparent pricing for Google Reviews in Nigeria. Starting ₦150,000 for 30 reviews/month. ✅ No hidden fees · 30-day guarantee.",
-  alternates: { canonical: "https://buyreviewsinnigeria.com/pricing/" },
-};
-
 export default function PricingPage() {
+  const [activeService, setActiveService] = useState<"reviews" | "web" | "app">("reviews");
+
   const breadcrumbs = buildBreadcrumbs([
     { label: "Pricing", href: "/pricing/" },
   ]);
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    name: "Google Review Collection",
-    description:
-      "Authentic Google Reviews from certified Local Guides in Nigeria",
-    offers: pricingPlans
-      .filter((p) => p.price !== "Custom")
-      .map((plan) => ({
-        "@type": "Offer",
-        name: plan.name,
-        price: plan.price.replace(",", ""),
-        priceCurrency: "NGN",
-        description: plan.description,
-      })),
+  const getServiceConfig = () => {
+    switch (activeService) {
+      case "web":
+        return {
+          title: "Web Development Pricing",
+          subtitle: "Professional websites and web applications built for your business.",
+          plans: webdevPlans,
+          addOns: webdevAddOns,
+        };
+      case "app":
+        return {
+          title: "Mobile App Pricing",
+          subtitle: "Custom iOS and Android apps to reach your customers on mobile.",
+          plans: mobileappPlans,
+          addOns: mobileappAddOns,
+        };
+      default:
+        return {
+          title: "Google Reviews Pricing",
+          subtitle:
+            "Monthly subscription plans for consistent reputation growth. Authentic Google Reviews from certified Local Guides, delivered every month.",
+          plans: pricingPlans,
+          addOns: additionalServices,
+        };
+    }
   };
 
+  const config = getServiceConfig();
+
   return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
-      <main className="bg-bg">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <Breadcrumb items={breadcrumbs} />
+    <main className="bg-bg">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <Breadcrumb items={breadcrumbs} />
+      </div>
+
+      {/* Hero */}
+      <section className="relative overflow-hidden bg-white py-20">
+        <div className="pointer-events-none absolute inset-0 dot-pattern-light" />
+        <div className="relative mx-auto max-w-3xl px-4 text-center sm:px-6">
+          <h1 className="font-heading text-4xl font-bold text-text-primary sm:text-5xl">
+            Simple, <span className="gradient-text-blue">Transparent</span> Pricing
+          </h1>
+          <p className="mt-6 text-lg text-text-secondary">{config.subtitle}</p>
         </div>
+      </section>
 
-        {/* Hero */}
-        <section className="relative overflow-hidden bg-white py-20">
-          <div className="pointer-events-none absolute inset-0 dot-pattern-light" />
-          <div className="relative mx-auto max-w-3xl px-4 text-center sm:px-6">
-            <h1 className="font-heading text-4xl font-bold text-text-primary sm:text-5xl">
-              Simple, <span className="gradient-text-blue">Transparent</span> Pricing
-            </h1>
-            <p className="mt-6 text-lg text-text-secondary">
-              Monthly subscription plans for consistent reputation growth.
-              Authentic Google Reviews from certified Local Guides, delivered every month.
-            </p>
+      {/* Service Toggle */}
+      <section className="py-8">
+        <div className="mx-auto max-w-2xl px-4 text-center">
+          <div className="inline-flex rounded-lg border border-border bg-white p-1">
+            <button
+              onClick={() => setActiveService("reviews")}
+              className={`px-6 py-2 rounded-md font-medium transition-all ${
+                activeService === "reviews"
+                  ? "bg-google-blue text-white"
+                  : "text-text-primary hover:text-google-blue"
+              }`}
+            >
+              Google Reviews
+            </button>
+            <button
+              onClick={() => setActiveService("web")}
+              className={`px-6 py-2 rounded-md font-medium transition-all ${
+                activeService === "web"
+                  ? "bg-google-blue text-white"
+                  : "text-text-primary hover:text-google-blue"
+              }`}
+            >
+              Web Development
+            </button>
+            <button
+              onClick={() => setActiveService("app")}
+              className={`px-6 py-2 rounded-md font-medium transition-all ${
+                activeService === "app"
+                  ? "bg-google-blue text-white"
+                  : "text-text-primary hover:text-google-blue"
+              }`}
+            >
+              Mobile App
+            </button>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Plans */}
-        <section className="py-20">
-          <div className="mx-auto max-w-6xl px-4 sm:px-6">
-            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-              {pricingPlans.map((plan, index) => {
+      {/* Plans */}
+      <section className="py-20">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+              {config.plans.map((plan, index) => {
                 const color = getColorForIndex(index);
 
                 return (
@@ -94,7 +135,7 @@ export default function PricingPage() {
                       <span className="font-heading text-3xl font-bold text-text-primary">
                         &#8358;{plan.price}
                       </span>
-                      <span className="text-sm text-text-secondary">/mo</span>
+                      <span className="text-sm text-text-secondary">{activeService === "reviews" ? "/mo" : ""}</span>
                     </div>
                     <p className="mt-1 text-sm text-text-secondary">
                       {plan.unit}
@@ -138,13 +179,15 @@ export default function PricingPage() {
         <section className="bg-white py-20">
           <div className="mx-auto max-w-4xl px-4 sm:px-6">
             <h2 className="text-center font-heading text-3xl font-bold text-text-primary">
-              Additional Services
+              {activeService === "reviews" ? "Additional Services" : "Add-ons"}
             </h2>
             <p className="mt-4 text-center text-text-secondary">
-              Complement your review strategy with these add-on services.
+              {activeService === "reviews"
+                ? "Complement your review strategy with these add-on services."
+                : "Enhance your package with these optional add-ons."}
             </p>
             <div className="mt-12 space-y-4">
-              {additionalServices.map((service, index) => {
+              {config.addOns.map((service, index) => {
                 const color = getColorForIndex(index);
                 return (
                   <div
@@ -184,7 +227,11 @@ export default function PricingPage() {
               Ready to Get Started?
             </h2>
             <p className="mt-4 text-lg text-white/80">
-              Choose your plan and start growing your online reputation today.
+              {activeService === "reviews"
+                ? "Choose your plan and start growing your online reputation today."
+                : activeService === "web"
+                ? "Build your professional web presence today."
+                : "Launch your app and reach customers on mobile."}
             </p>
             <Link
               href="/get-started/"
@@ -195,6 +242,5 @@ export default function PricingPage() {
           </div>
         </section>
       </main>
-    </>
-  );
+    );
 }

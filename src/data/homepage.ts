@@ -185,6 +185,22 @@ export const servicesData = {
       features: ["Certified Local Guides", "Custom review content", "Natural delivery pacing"],
     },
     {
+      title: "Web Development",
+      description:
+        "Professional websites and web applications built with modern technology. Fast, secure, and optimized for conversions.",
+      href: "/web-pricing/",
+      icon: "Globe" as IconName,
+      features: ["Responsive design", "SEO-optimized", "Fast & secure"],
+    },
+    {
+      title: "Mobile App Development",
+      description:
+        "Custom iOS and Android apps to reach your customers on mobile. Built for performance, scalability, and user engagement.",
+      href: "/app-pricing/",
+      icon: "Monitor" as IconName,
+      features: ["iOS & Android", "Custom features", "App store ready"],
+    },
+    {
       title: "Trustpilot Review Collection",
       description:
         "Build trust with genuine Trustpilot reviews from verified Nigerian customers for your online business.",
@@ -231,22 +247,6 @@ export const servicesData = {
       href: "/services/local-seo/",
       icon: "TrendingUp" as IconName,
       features: ["Citation building", "Local backlinks", "Maps ranking"],
-    },
-    {
-      title: "Web Development",
-      description:
-        "Professional websites and web applications built with modern technology. Fast, secure, and optimized for conversions.",
-      href: "/web-pricing/",
-      icon: "Globe" as IconName,
-      features: ["Responsive design", "SEO-optimized", "Fast & secure"],
-    },
-    {
-      title: "Mobile App Development",
-      description:
-        "Custom iOS and Android apps to reach your customers on mobile. Built for performance, scalability, and user engagement.",
-      href: "/app-pricing/",
-      icon: "Monitor" as IconName,
-      features: ["iOS & Android", "Custom features", "App store ready"],
     },
   ] satisfies ServiceCardData[],
 };

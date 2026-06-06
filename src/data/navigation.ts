@@ -63,25 +63,25 @@ export const mainNavigation: NavItem[] = [
         ],
       },
       {
-        title: "Business Growth",
+        title: "Development & Growth",
         links: [
+          {
+            label: "Web Development",
+            href: "/web-pricing/",
+            description: "Professional websites and web applications",
+            icon: "Globe",
+          },
+          {
+            label: "Mobile App Development",
+            href: "/app-pricing/",
+            description: "Custom iOS and Android apps",
+            icon: "Monitor",
+          },
           {
             label: "GMB Optimization",
             href: "/services/gmb-optimization/",
             description: "Optimize your Google Business Profile",
             icon: "GoogleLogo",
-          },
-          {
-            label: "GMB Profile Creation",
-            href: "/services/gmb-optimization/gmb-profile-creation/",
-            description: "Create your Google Business Profile",
-            icon: "Globe",
-          },
-          {
-            label: "GMB Ownership Recovery",
-            href: "/services/gmb-optimization/gmb-ownership-recovery/",
-            description: "Recover lost GMB profile access",
-            icon: "Key",
           },
           {
             label: "Reputation Management",
@@ -292,6 +292,8 @@ export const footerColumns: FooterColumn[] = [
     links: [
       { label: "Google Review Collection", href: "/services/google-review-collection/" },
       { label: "Trustpilot Review Collection", href: "/services/trustpilot-review-collection/" },
+      { label: "Web Development", href: "/web-pricing/" },
+      { label: "Mobile App Development", href: "/app-pricing/" },
       { label: "GMB Optimization", href: "/services/gmb-optimization/" },
       { label: "Reputation Management", href: "/services/reputation-management/" },
       { label: "Negative Review Removal", href: "/services/negative-review-removal/" },
