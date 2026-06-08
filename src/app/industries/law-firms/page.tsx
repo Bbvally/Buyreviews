@@ -130,44 +130,14 @@ export default function LawFirmsPage() {
       </section>
 
       <section className="bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Pricing for Law Firms</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-lg shadow border-2 border-gray-200">
-              <h3 className="text-2xl font-bold mb-4">Starter</h3>
-              <p className="text-4xl font-bold text-slate-700 mb-4">₦300k</p>
-              <ul className="space-y-3 mb-8 text-gray-700">
-                <li>✓ 25 Client Reviews</li>
-                <li>✓ 4.5+ Rating</li>
-                <li>✓ 30 Days Delivery</li>
-                <li>✓ 95% Retention</li>
-              </ul>
-              <button className="w-full bg-slate-700 text-white py-2 rounded font-semibold">Get Started</button>
-            </div>
-            <div className="bg-white p-8 rounded-lg shadow border-2 border-slate-700">
-              <div className="text-sm font-bold text-slate-700 mb-4">BESTSELLER</div>
-              <h3 className="text-2xl font-bold mb-4">Professional</h3>
-              <p className="text-4xl font-bold text-slate-700 mb-4">₦500k</p>
-              <ul className="space-y-3 mb-8 text-gray-700">
-                <li>✓ 50 Client Reviews</li>
-                <li>✓ 4.8+ Rating</li>
-                <li>✓ 30 Days Delivery</li>
-                <li>✓ 95% Retention</li>
-              </ul>
-              <button className="w-full bg-slate-700 text-white py-2 rounded font-semibold">Get Started</button>
-            </div>
-            <div className="bg-white p-8 rounded-lg shadow border-2 border-gray-200">
-              <h3 className="text-2xl font-bold mb-4">Premium</h3>
-              <p className="text-4xl font-bold text-slate-700 mb-4">₦800k</p>
-              <ul className="space-y-3 mb-8 text-gray-700">
-                <li>✓ 100 Client Reviews</li>
-                <li>✓ 4.9+ Rating</li>
-                <li>✓ 30 Days Delivery</li>
-                <li>✓ 95% Retention</li>
-              </ul>
-              <button className="w-full bg-slate-700 text-white py-2 rounded font-semibold">Get Started</button>
-            </div>
-          </div>
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Pricing</h2>
+          <p className="text-gray-700 mb-8">
+            View our transparent pricing and flexible packages for law firms.
+          </p>
+          <a href="/pricing/" className="inline-block bg-slate-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-slate-800">
+            View Pricing Page
+          </a>
         </div>
       </section>
 

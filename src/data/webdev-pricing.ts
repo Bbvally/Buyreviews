@@ -4,7 +4,7 @@ export const webdevPlans: PricingPlan[] = [
   {
     name: "Landing Page",
     slug: "landing-page",
-    price: "150,000",
+    price: "100,000",
     currency: "NGN",
     unit: "one-time",
     description:
@@ -28,7 +28,7 @@ export const webdevPlans: PricingPlan[] = [
   {
     name: "Starter Website",
     slug: "starter-website",
-    price: "320,000",
+    price: "250,000",
     currency: "NGN",
     unit: "one-time",
     description:
@@ -51,7 +51,7 @@ export const webdevPlans: PricingPlan[] = [
   {
     name: "Business Website",
     slug: "business-website",
-    price: "620,000",
+    price: "420,000",
     currency: "NGN",
     unit: "one-time",
     description:
@@ -74,7 +74,7 @@ export const webdevPlans: PricingPlan[] = [
   {
     name: "E-Commerce Store",
     slug: "ecommerce-store",
-    price: "920,000",
+    price: "650,000",
     currency: "NGN",
     unit: "one-time",
     description:
@@ -97,9 +97,9 @@ export const webdevPlans: PricingPlan[] = [
     ctaLink: "/get-started/",
   },
   {
-    name: "Custom Web Application",
+    name: "Business Management System",
     slug: "custom-webapp",
-    price: "1,500,000",
+    price: "1,100,000",
     currency: "NGN",
     unit: "one-time (starting)",
     description:
@@ -154,6 +154,6 @@ export const webdevAddOns = [
     price: "Varies",
     currency: "NGN",
     unit: "per year",
-    description: "Landing Page: ₦80,000 | Starter: ₦150,000 | Business: ₦300,000 | E-Commerce: ₦480,000 | Custom: ₦700,000",
+    description: "Landing Page: ₦60,000 | Starter: ₦100,000 | Business: ₦150,000 | E-Commerce: ₦200,000 | Custom: ₦300,000",
   },
 ] as const;

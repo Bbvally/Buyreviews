@@ -111,44 +111,14 @@ export default function HotelsPage() {
       </section>
 
       <section className="bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Pricing for Hotels</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-lg shadow border-2 border-gray-200">
-              <h3 className="text-2xl font-bold mb-4">Starter</h3>
-              <p className="text-4xl font-bold text-blue-600 mb-4">₦200k</p>
-              <ul className="space-y-3 mb-8 text-gray-700">
-                <li>✓ 25 Guest Reviews</li>
-                <li>✓ 4.5+ Rating</li>
-                <li>✓ 30 Days Delivery</li>
-                <li>✓ 95% Retention</li>
-              </ul>
-              <button className="w-full bg-blue-600 text-white py-2 rounded font-semibold">Get Started</button>
-            </div>
-            <div className="bg-white p-8 rounded-lg shadow border-2 border-blue-600">
-              <div className="text-sm font-bold text-blue-600 mb-4">BESTSELLER</div>
-              <h3 className="text-2xl font-bold mb-4">Professional</h3>
-              <p className="text-4xl font-bold text-blue-600 mb-4">₦400k</p>
-              <ul className="space-y-3 mb-8 text-gray-700">
-                <li>✓ 50 Guest Reviews</li>
-                <li>✓ 4.8+ Rating</li>
-                <li>✓ 30 Days Delivery</li>
-                <li>✓ 95% Retention</li>
-              </ul>
-              <button className="w-full bg-blue-600 text-white py-2 rounded font-semibold">Get Started</button>
-            </div>
-            <div className="bg-white p-8 rounded-lg shadow border-2 border-gray-200">
-              <h3 className="text-2xl font-bold mb-4">Premium</h3>
-              <p className="text-4xl font-bold text-blue-600 mb-4">₦600k</p>
-              <ul className="space-y-3 mb-8 text-gray-700">
-                <li>✓ 100 Guest Reviews</li>
-                <li>✓ 4.9+ Rating</li>
-                <li>✓ 30 Days Delivery</li>
-                <li>✓ 95% Retention</li>
-              </ul>
-              <button className="w-full bg-blue-600 text-white py-2 rounded font-semibold">Get Started</button>
-            </div>
-          </div>
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Pricing</h2>
+          <p className="text-gray-700 mb-8">
+            View our transparent pricing and flexible packages for hotels.
+          </p>
+          <a href="/pricing/" className="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700">
+            View Pricing Page
+          </a>
         </div>
       </section>
 

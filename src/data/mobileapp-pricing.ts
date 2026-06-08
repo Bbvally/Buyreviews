@@ -79,7 +79,7 @@ export const mobileappPlans: PricingPlan[] = [
   {
     name: "On-Demand Service App",
     slug: "ondemand-app",
-    price: "5,500,000",
+    price: "8,500,000",
     currency: "NGN",
     unit: "one-time",
     description:
@@ -105,7 +105,7 @@ export const mobileappPlans: PricingPlan[] = [
   {
     name: "Custom Enterprise App",
     slug: "custom-enterprise-app",
-    price: "8,000,000",
+    price: "12,000,000",
     currency: "NGN",
     unit: "one-time (starting)",
     description:

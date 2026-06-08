@@ -10,13 +10,11 @@ import {
   getCrossReferencesByIndustry,
   getCrossReferencesByCity,
 } from "@/data/cross-references";
-import { pricingPlans } from "@/data/pricing";
 import { industryBreadcrumbs, getCrossReferencePageLinks } from "@/lib/internal-links";
 import { Breadcrumb } from "@/components/layout/breadcrumb";
 import { InternalLinks } from "@/components/sections";
 import {
   iconMap,
-  CheckCircle,
   ArrowRight,
   MapPin,
 } from "@/components/icons";
@@ -353,69 +351,19 @@ export default async function IndustryCityPage({ params }: Props) {
 
       {/* Pricing */}
       <section className="bg-white py-16 sm:py-20">
-        <div className="mx-auto max-w-5xl px-6">
+        <div className="mx-auto max-w-5xl px-6 text-center">
           <h2 className="font-heading text-2xl font-bold text-text-primary sm:text-3xl">
             Pricing
           </h2>
           <p className="mt-2 text-text-secondary">
-            Packages for {industry.name.toLowerCase()} businesses in {city.name}.
+            View our transparent pricing and flexible packages.
           </p>
-          <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {pricingPlans.slice(0, 3).map((plan) => (
-              <div
-                key={plan.slug}
-                className={`relative rounded-xl border-2 bg-bg p-6 ${
-                  plan.isPopular
-                    ? "border-google-blue shadow-lg"
-                    : "border-border shadow-sm"
-                }`}
-              >
-                {plan.isPopular && (
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                    <span className="rounded-full bg-google-blue px-4 py-1 text-xs font-semibold text-white">
-                      Most Popular
-                    </span>
-                  </div>
-                )}
-                <h3 className="font-heading text-lg font-semibold text-text-primary">
-                  {plan.name}
-                </h3>
-                <div className="mt-3 flex items-baseline gap-1">
-                  <span className="font-heading text-3xl font-bold text-text-primary">
-                    &#8358;{plan.price}
-                  </span>
-                </div>
-                <p className="mt-1 text-sm text-text-secondary">{plan.unit}</p>
-                <ul className="mt-6 space-y-2">
-                  {plan.features.slice(0, 4).map((feature) => (
-                    <li
-                      key={feature}
-                      className="flex items-start gap-2 text-sm text-text-secondary"
-                    >
-                      <CheckCircle className="mt-0.5 h-4 w-4 shrink-0 text-google-green" />
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-                <Link
-                  href={plan.ctaLink}
-                  className={`mt-6 block rounded-lg py-3 text-center text-sm font-semibold transition-all ${
-                    plan.isPopular
-                      ? "bg-google-blue text-white hover:bg-google-blue/90"
-                      : "border border-border bg-white text-text-primary hover:border-google-blue hover:text-google-blue"
-                  }`}
-                >
-                  {plan.ctaText}
-                </Link>
-              </div>
-            ))}
-          </div>
-          <div className="mt-8 text-center">
+          <div className="mt-8">
             <Link
               href="/pricing/"
-              className="inline-flex items-center gap-2 text-base font-medium text-google-blue hover:underline"
+              className="inline-flex items-center gap-2 rounded-full bg-google-blue px-6 py-3 text-sm font-medium text-white transition-shadow hover:shadow-md"
             >
-              View All Plans
+              View Pricing Page
               <ArrowRight className="h-4 w-4" />
             </Link>
           </div>

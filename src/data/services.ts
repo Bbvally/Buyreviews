@@ -272,6 +272,320 @@ export const services: Service[] = [
     ],
   },
   {
+    slug: "web-development",
+    name: "Web Development",
+    icon: "Globe",
+    shortDescription:
+      "Custom websites designed and built for Nigerian businesses. Fast, mobile-friendly, and conversion-optimized.",
+    longDescription:
+      "Your website is your digital storefront. A well-designed, fast-loading website can significantly increase customer inquiries and sales for your Nigerian business. We build custom websites that are optimized for both users and search engines.\n\nFrom e-commerce platforms to service websites, we create responsive designs that work perfectly on all devices. Our websites are built with performance in mind — fast page speeds, clean code, and modern technology stack.\n\nWe understand the Nigerian market and build websites that resonate with your target audience while integrating with our other digital services like Google Business Profile optimization and local SEO.",
+    metaTitle: "Web Development Nigeria | Custom Websites",
+    metaDescription:
+      "Custom web development for Nigerian businesses. Fast, mobile-friendly, conversion-optimized websites.",
+    keywords: [
+      "web development Nigeria",
+      "website design Lagos",
+      "web design Abuja",
+      "custom website Nigeria",
+      "responsive web design",
+      "ecommerce website Nigeria",
+      "business website design",
+    ],
+    benefits: [
+      {
+        icon: "Monitor",
+        title: "Mobile-First Design",
+        description:
+          "All our websites are designed mobile-first, ensuring perfect display on smartphones, tablets, and desktops.",
+      },
+      {
+        icon: "Zap",
+        title: "Lightning-Fast Speed",
+        description:
+          "Optimized for speed with lazy loading, image optimization, and efficient code. Fast sites rank higher on Google.",
+      },
+      {
+        icon: "BarChart",
+        title: "Conversion-Optimized",
+        description:
+          "Every design element is optimized to convert visitors into customers. Clear CTAs, trust signals, and intuitive navigation.",
+      },
+      {
+        icon: "Shield",
+        title: "Secure & Reliable",
+        description:
+          "SSL certificates, secure hosting, regular backups, and 99.9% uptime guarantee for your business.",
+      },
+      {
+        icon: "Search",
+        title: "SEO-Ready",
+        description:
+          "Built with SEO best practices from the ground up. Clean code, proper heading structure, fast loading, mobile-friendly.",
+      },
+    ],
+    process: [
+      {
+        step: 1,
+        title: "Discovery & Strategy",
+        description:
+          "We understand your business goals, target audience, and competitive landscape before any design work begins.",
+      },
+      {
+        step: 2,
+        title: "Wireframing & Design",
+        description:
+          "We create detailed wireframes and high-fidelity designs that showcase your brand and guide user behavior.",
+      },
+      {
+        step: 3,
+        title: "Development",
+        description:
+          "Our developers build your site using modern technologies. We focus on clean code, performance, and security.",
+      },
+      {
+        step: 4,
+        title: "Testing & Launch",
+        description:
+          "Comprehensive testing across devices and browsers. We handle deployment and ensure everything is working perfectly.",
+      },
+      {
+        step: 5,
+        title: "Training & Support",
+        description:
+          "We train your team on how to update content and provide ongoing technical support after launch.",
+      },
+    ],
+    relatedServices: [
+      "google-review-collection",
+      "gmb-optimization",
+      "local-seo",
+      "reputation-management",
+    ],
+    relatedIndustries: [
+      "restaurants",
+      "hotels",
+      "real-estate-agents",
+      "lawyers",
+      "salons-barbershops",
+    ],
+    relatedCities: ["lagos", "abuja", "port-harcourt"],
+    pricingLink: "/pricing/",
+    faq: [
+      {
+        question: "How much does a website cost?",
+        answer:
+          "Website costs vary based on complexity and features. Simple sites start from ₦200,000. Complex e-commerce sites can range from ₦500,000 to ₦2,000,000+. Contact us for a custom quote.",
+      },
+      {
+        question: "How long does a website take to build?",
+        answer:
+          "A standard website typically takes 4-8 weeks from start to launch. Complex projects may take longer. We'll provide a timeline during the planning phase.",
+      },
+      {
+        question: "Do you provide hosting and domain?",
+        answer:
+          "Yes. We can arrange hosting and domain registration for you. Hosting costs start from ₦10,000/month.",
+      },
+      {
+        question: "Can you build an e-commerce website?",
+        answer:
+          "Absolutely. We build fully functional e-commerce sites with payment integration, inventory management, and order tracking.",
+      },
+      {
+        question: "What happens after launch?",
+        answer:
+          "We provide ongoing support and maintenance. You can also opt for our website management service to handle updates and improvements.",
+      },
+    ],
+    subPages: [
+      {
+        slug: "responsive-design",
+        name: "Responsive Web Design",
+        metaTitle: "Responsive Web Design Nigeria",
+        metaDescription:
+          "Mobile-friendly website design that works on all devices. Responsive design for Nigerian businesses.",
+        shortDescription:
+          "Websites that look perfect on phones, tablets, and desktops.",
+        longDescription:
+          "With most internet access in Nigeria happening via mobile devices, a responsive design is no longer optional — it's essential. We build websites that automatically adapt to any screen size.",
+        keywords: ["responsive design Nigeria", "mobile website design"],
+        faq: [
+          {
+            question: "Why is responsive design important?",
+            answer:
+              "Google prioritizes mobile-friendly sites in rankings. Plus, most of your customers access your site from phones.",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "app-development",
+    name: "Mobile App Development",
+    icon: "Monitor",
+    shortDescription:
+      "Custom iOS and Android apps for Nigerian businesses. User-friendly, feature-rich, and optimized for performance.",
+    longDescription:
+      "A mobile app is a powerful tool for customer engagement and loyalty. Whether you need an e-commerce app, service booking platform, or customer management tool, we build custom apps that deliver real business results.\n\nWe develop both iOS and Android apps using native and cross-platform technologies. Our apps are user-friendly, fast, and optimized for low-bandwidth environments — important for Nigeria where internet speeds vary.\n\nFrom concept to app store launch, we handle the entire development process. We also provide ongoing maintenance, updates, and feature enhancements to keep your app competitive.",
+    metaTitle: "Mobile App Development Nigeria | iOS & Android",
+    metaDescription:
+      "Custom iOS and Android app development for Nigerian businesses. User-friendly, feature-rich mobile apps.",
+    keywords: [
+      "app development Nigeria",
+      "ios app development Lagos",
+      "android app development Nigeria",
+      "mobile app developer",
+      "custom app development",
+      "ecommerce app Nigeria",
+      "app design and development",
+    ],
+    benefits: [
+      {
+        icon: "Monitor",
+        title: "Native & Cross-Platform",
+        description:
+          "We develop native iOS/Android apps for best performance or cross-platform apps for faster, cost-effective development.",
+      },
+      {
+        icon: "Zap",
+        title: "Offline Functionality",
+        description:
+          "Apps that work even with poor internet connection — critical for Nigeria's variable connectivity.",
+      },
+      {
+        icon: "Users",
+        title: "User-Friendly Interface",
+        description:
+          "Intuitive design that users love. Clean, simple navigation with beautiful, modern interfaces.",
+      },
+      {
+        icon: "BarChart",
+        title: "Analytics & Tracking",
+        description:
+          "Built-in analytics to track user behavior, feature usage, and app performance metrics.",
+      },
+      {
+        icon: "Lock",
+        title: "Secure & Compliant",
+        description:
+          "Enterprise-grade security with encrypted data, secure authentication, and compliance with industry standards.",
+      },
+    ],
+    process: [
+      {
+        step: 1,
+        title: "App Concept & Planning",
+        description:
+          "We refine your app idea, define features, plan the user journey, and create a detailed project roadmap.",
+      },
+      {
+        step: 2,
+        title: "UI/UX Design",
+        description:
+          "We design beautiful, intuitive interfaces with wireframes, prototypes, and user testing.",
+      },
+      {
+        step: 3,
+        title: "App Development",
+        description:
+          "Our developers build your app with clean code, best practices, and regular progress updates.",
+      },
+      {
+        step: 4,
+        title: "Testing & QA",
+        description:
+          "Comprehensive testing for bugs, performance, security, and user experience across devices.",
+      },
+      {
+        step: 5,
+        title: "Launch & Support",
+        description:
+          "We handle app store submissions and provide ongoing support, updates, and new feature development.",
+      },
+    ],
+    relatedServices: [
+      "web-development",
+      "gmb-optimization",
+      "reputation-management",
+    ],
+    relatedIndustries: [
+      "restaurants",
+      "hotels",
+      "logistics-delivery",
+      "real-estate-agents",
+      "fashion-boutiques",
+    ],
+    relatedCities: ["lagos", "abuja", "port-harcourt"],
+    pricingLink: "/pricing/",
+    faq: [
+      {
+        question: "How much does an app cost?",
+        answer:
+          "App development costs vary widely. Simple apps start from ₦400,000. Complex apps with multiple features can range from ₦1,000,000 to ₦5,000,000+. We provide custom quotes after understanding your requirements.",
+      },
+      {
+        question: "How long does app development take?",
+        answer:
+          "A typical app takes 8-16 weeks from concept to launch. Timeline depends on complexity, features, and platform(s) chosen.",
+      },
+      {
+        question: "Do you build iOS, Android, or both?",
+        answer:
+          "We build both. For cost efficiency, we often recommend a cross-platform app that works on both iOS and Android.",
+      },
+      {
+        question: "Can you publish to the App Store and Google Play?",
+        answer:
+          "Yes. We handle all app store submissions, account setup, and the publication process. App store fees are separate.",
+      },
+      {
+        question: "What about updates and maintenance?",
+        answer:
+          "We provide ongoing support packages. Apps need regular updates for security, compatibility, and new features.",
+      },
+    ],
+    subPages: [
+      {
+        slug: "ios-development",
+        name: "iOS App Development",
+        metaTitle: "iOS App Development Nigeria",
+        metaDescription:
+          "Custom iPhone app development for Nigerian businesses. Native iOS apps that users love.",
+        shortDescription:
+          "Native iOS apps built for iPhone and iPad.",
+        longDescription:
+          "We develop native iOS apps that take full advantage of iPhone and iPad capabilities. Native apps provide the best performance and user experience.",
+        keywords: ["ios app development Nigeria", "iphone app developer"],
+        faq: [
+          {
+            question: "Should I choose iOS or Android?",
+            answer:
+              "Each has pros and cons. iOS users tend to spend more but represent a smaller market in Nigeria. We can help you decide based on your target audience.",
+          },
+        ],
+      },
+      {
+        slug: "android-development",
+        name: "Android App Development",
+        metaTitle: "Android App Development Nigeria",
+        metaDescription:
+          "Custom Android app development for Nigerian businesses. Native Android apps for maximum reach.",
+        shortDescription:
+          "Native Android apps for smartphones and tablets.",
+        longDescription:
+          "We develop native Android apps that work across all Android devices. With Android's larger market share in Nigeria, an Android app gives you access to more potential customers.",
+        keywords: ["android app development Nigeria", "android developer"],
+        faq: [
+          {
+            question: "Does Android development cost less than iOS?",
+            answer:
+              "Pricing is similar. The choice between iOS/Android should be based on your target audience, not cost alone.",
+          },
+        ],
+      },
+    ],
+  },
+  {
     slug: "trustpilot-review-collection",
     name: "Trustpilot Review Collection",
     icon: "TrustpilotLogo",

@@ -641,7 +641,7 @@ export const webdevPreviewData = {
   plans: [
     {
       name: "Landing Page",
-      price: "150,000",
+      price: "100,000",
       unit: "one-time",
       features: [
         "1-page scrolling website",
@@ -655,7 +655,7 @@ export const webdevPreviewData = {
     },
     {
       name: "Starter Website",
-      price: "320,000",
+      price: "250,000",
       unit: "one-time",
       features: [
         "5 pages (Home, About, Services, Contact, Blog)",
@@ -669,7 +669,7 @@ export const webdevPreviewData = {
     },
     {
       name: "Business Website",
-      price: "620,000",
+      price: "420,000",
       unit: "one-time",
       features: [
         "10+ pages",
