@@ -1,24 +1,55 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
 import { heroData } from "@/data/homepage";
 import { iconMap } from "@/components/icons";
 import Image from "next/image";
 import { PromoForm } from "@/components/forms/promo-form";
 import { getColorForIndex } from "@/lib/colors";
 
+const HERO_IMAGES = [
+  "https://ik.imagekit.io/zdymchrma/hero-nigerian-professionals.jpg",
+  "https://ik.imagekit.io/zdymchrma/default-image.jpg?updatedAt=1780878356742",
+  "/images/hero-nigerian-professionals.jpeg",
+];
+
+const SLIDE_INTERVAL = 5000; // 5 seconds per slide
+
 export function Hero() {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % HERO_IMAGES.length);
+    }, SLIDE_INTERVAL);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section className="relative overflow-hidden bg-white pb-12 pt-20 sm:pb-16 sm:pt-24">
-      {/* Subtle background image */}
+      {/* Sliding background images */}
       <div className="pointer-events-none absolute inset-0">
-        <Image
-          src="/images/hero-nigerian-professionals.jpeg"
-          alt=""
-          fill
-          className="object-contain object-left opacity-[0.14]"
-          priority
-        />
+        {HERO_IMAGES.map((src, index) => (
+          <motion.div
+            key={src}
+            className="absolute inset-0"
+            initial={{ opacity: 0 }}
+            animate={{
+              opacity: index === currentImageIndex ? 1 : 0,
+            }}
+            transition={{ duration: 0.8 }}
+          >
+            <Image
+              src={src}
+              alt=""
+              fill
+              className="object-cover object-center opacity-50"
+              priority={index === 0}
+            />
+          </motion.div>
+        ))}
         <div className="absolute inset-0 bg-gradient-to-r from-white/40 via-white/20 to-white/80" />
       </div>
 
