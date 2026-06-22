@@ -17,6 +17,7 @@ import {
   iconMap,
   ArrowRight,
   MapPin,
+  CheckCircle,
 } from "@/components/icons";
 import { StarRating, FaqAccordion } from "@/components/ui";
 import { PromoForm } from "@/components/forms/promo-form";
