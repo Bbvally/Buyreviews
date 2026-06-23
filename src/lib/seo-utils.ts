@@ -23,7 +23,7 @@ export function generateAlternates(path: string) {
   return alternates;
 }
 
-export function generateHrefLangTags(locale: Locale, path: string) {
+export function generateHrefLangTags(path: string) {
   return locales.map((l) => ({
     rel: "alternate",
     hrefLang: l === "en" ? "en-NG" : `${l}-NG`,
